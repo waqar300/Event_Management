@@ -1,7 +1,11 @@
+<?php
+
+ $email = $phone = $product = $amount = $details = " ";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Evento</title>
+  <title>inquiry</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,18 +53,14 @@ Home</a>
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2 text-warning" type="text" placeholder="Search">
+        <input class="form-control me-2 nav-hov text-warning" type="text" placeholder="Search">
         <button class="btn btn-primary" type="button">Search</button>
       </form>
     </div>
   </div>
 </nav>
 
-<div class="container">
-<div class="row">
-  
-</div>
-</div>
+
 
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -108,56 +108,106 @@ Home</a>
 
 
 
- <!-- body evento after slider cards -->
-<section>
-<div class="container mt-3 ">
-  <div class="row justify-content-center mx-0">
-    <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="CEO">
-  <div class="card-body">
-    <h5 class="card-title">CEO</h5>
-    <p class="card-text">Mr Salman is a Event Handeler and expert in his area of experties Thanks to him we have great oppertunity to manage Events.</p>
-    <a href="#" class="btn btn-primary">About CEO</a>
-  </div>
-</div>
+
+<!-- Form controls/icons After Slider -->
+<div class="container form-inq">
+  <div class="row mx-0 justify-content-center">
+    <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
+      <form
+        method="POST"
+        class="
+          w-100
+          rounded-1
+          p-4
+          border
+          text-warning
+          bg-dark
+          border-secondary
+        "
+        action="form.php"
+      >
+        <label class="d-block mb-4">
+          <span class="form-label d-block text-warning">Email address</span>
+          <input
+            name="email"
+            type="email"
+            class="form-control border-secondary bg-transparent text-warning"
+            placeholder="salman@example.com"
+            value="<?php echo $email;?>"
+            required
+          />
+        </label>
+
+        <label class="d-block mb-4">
+          <span class="form-label d-block text-warning">Phone number</span>
+          <input
+            name="phone"
+            type="text"
+            class="form-control border-secondary bg-transparent text-warning"
+            placeholder="+92-(300)-123-4567"
+            value="<?php echo $phone;?>"
+          />
+        </label>
+
+        <label class="d-block mb-4">
+          <span class="form-label d-block text-warning">Event</span>
+          <select
+            name="product"
+            class="form-select border-secondary bg-dark text-warning"
+            value="<?php echo $product;?>"
+          >
+            <option>Birthday Event</option>
+            <option>Marrige Event</option>
+            <option>Saminar</option>
+            <option>Corporate</option>
+            <option>Meetings</option>
+          </select>
+        </label>
+
+        <label class="d-block mb-4">
+          <span class="form-label d-block text-warning">Person</span>
+          <input
+            name="amount"
+            type="number"
+            class="form-control border-secondary bg-transparent text-warning"
+            placeholder="1"
+            value="<?php echo $amount;?>"
+            required
+          />
+        </label>
+
+        <label class="d-block mb-4">
+          <span
+            class="
+              form-label
+              d-block
+              text-warning
+              border-secondary
+              bg-transparent
+            "
+            >Details</span
+          >
+          <textarea
+            name="details"
+            class="form-control border-secondary bg-transparent text-warning"
+            rows="3"
+            placeholder="Details about your inquiry"
+            value="<?php echo $details;?>"
+          ></textarea>
+        </label>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary px-3 rounded-3">
+            Submit Inquiry
+          </button>
+        </div>       
+      </form>
     </div>
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Finance</h5>
-    <p class="card-text">Some quick example text to build on the card add somthing title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">About Finance</a>
   </div>
 </div>
-    </div>
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Marketing</h5>
-    <p class="card-text">Some quick example text to build on the card add somthiong title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">About Marketing</a>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-</section>
 
 
 
-<!-- Google Map Embeded code -->
-<div class="container-fluid mt-2">
-  <div class="row justify-content-center">
-    <div class="col px-0">
-         
-  <iframe class="border border-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.8346363512587!2d71.53106602922466!3d29.853749905902802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b15d838279497%3A0x535ae76a48048d12!2sDaDa%20Drink%20Corner!5e0!3m2!1sen!2s!4v1642670462457!5m2!1sen!2s" width="100%" height="350" allowfullscreen="" loading="lazy"></iframe>
-  </div>    
-  </div>
-</div>
-<!-- Google Map Embeded code -->
 
 
 <!-- Footer -->
@@ -253,7 +303,7 @@ Home</a>
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3 bg-warning">&copy; <?php echo date("m/y"); ?> Copyright:
-    <a class="text-decoration-none hover-overlay shadow-3-strong" href="home.php"> evento.com</a>
+    <a class="text-decoration-none hover-overlay shadow-3-strong" href="https://evento.com/"> evento.com</a>
   </div>
   <!-- Copyright -->
 </footer>

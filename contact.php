@@ -56,11 +56,7 @@ Home</a>
   </div>
 </nav>
 
-<div class="container">
-<div class="row">
-  
-</div>
-</div>
+
 
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -76,21 +72,21 @@ Home</a>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="evento1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-      <div class="carousel-caption">
+      <div class="carousel-caption text-warning mb-5">
         <h3>Event</h3>
         <p>We had such a great time in Event</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="evento1.jpg" alt="Chicago" class="d-block" style="width:100%">
-      <div class="carousel-caption">
+      <div class="carousel-caption text-warning mb-5 pb-5">
         <h3>Birthday Party</h3>
         <p>Thank you, Salman for your Pictures</p>
       </div> 
     </div>
     <div class="carousel-item">
       <img src="evento1.jpg" alt="New York" class="d-block" style="width:100%">
-      <div class="carousel-caption">
+      <div class="carousel-caption text-warning mb-5 pb-5">
         <h3>Seminar</h3>
         <p>We love to manage such a Great Seminar!</p>
       </div>  
@@ -108,44 +104,53 @@ Home</a>
 
 
 
- <!-- body evento after slider cards -->
-<section>
-<div class="container mt-3 ">
-  <div class="row justify-content-center mx-0">
-    <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="CEO">
-  <div class="card-body">
-    <h5 class="card-title">CEO</h5>
-    <p class="card-text">Mr Salman is a Event Handeler and expert in his area of experties Thanks to him we have great oppertunity to manage Events.</p>
-    <a href="#" class="btn btn-primary">About CEO</a>
-  </div>
-</div>
-    </div>
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Finance</h5>
-    <p class="card-text">Some quick example text to build on the card add somthing title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">About Finance</a>
-  </div>
-</div>
-    </div>
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Marketing</h5>
-    <p class="card-text">Some quick example text to build on the card add somthiong title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">About Marketing</a>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-</section>
+ <!-- body evento after slider -->
 
+<div class="container">
+<div class="d-flex flex-row justify-content-center bd-highlight m-3">
+  <div class="p-2 bd-highlight">
+
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Our Address</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Multan</h6>
+    <p class="card-text">Shujaabd Road BastiMalook Tehsil And District Multan</p>
+    <a href="inquiry.php" class="btn btn-primary card-link">For Inquiry</a>
+  </div> 
+ </div>
+
+  </div>
+
+<!-- contact us form -->
+<div class="p-2 m-2 bd-highlight">
+<form>
+  <div class="row mb-3">
+    <label for="inputName3" class="col-sm-2 col-form-label">Full Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputName3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputDtail3" class="col-sm-2 col-form-label">Detail</label>
+    <div class="col-sm-10">
+      <!-- details -->
+      <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+    </div>
+  </div>
+  <div class="row mb-3">
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+</div>
+
+</div>
+</div>
 
 
 <!-- Google Map Embeded code -->
@@ -253,7 +258,7 @@ Home</a>
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3 bg-warning">&copy; <?php echo date("m/y"); ?> Copyright:
-    <a class="text-decoration-none hover-overlay shadow-3-strong" href="home.php"> evento.com</a>
+    <a class="text-decoration-none hover-overlay shadow-3-strong" href="https://evento.com/"> evento.com</a>
   </div>
   <!-- Copyright -->
 </footer>

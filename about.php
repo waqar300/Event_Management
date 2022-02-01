@@ -56,11 +56,7 @@ Home</a>
   </div>
 </nav>
 
-<div class="container">
-<div class="row">
-  
-</div>
-</div>
+
 
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -105,48 +101,17 @@ Home</a>
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+<!-- after slider body -->
+<div class="container">
+  <div class="row">
+    <div class="col">
 
-
-
- <!-- body evento after slider cards -->
-<section>
-<div class="container mt-3 ">
-  <div class="row justify-content-center mx-0">
-    <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="CEO">
-  <div class="card-body">
-    <h5 class="card-title">CEO</h5>
-    <p class="card-text">Mr Salman is a Event Handeler and expert in his area of experties Thanks to him we have great oppertunity to manage Events.</p>
-    <a href="#" class="btn btn-primary">About CEO</a>
-  </div>
-</div>
     </div>
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Finance</h5>
-    <p class="card-text">Some quick example text to build on the card add somthing title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">About Finance</a>
-  </div>
-</div>
+    <div class="col">
+      
     </div>
-        <div class="col-md-4 col-lg-4">
-      <div class="card" style="width: 18rem;">
-  <img src="user2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Marketing</h5>
-    <p class="card-text">Some quick example text to build on the card add somthiong title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">About Marketing</a>
-  </div>
+  </div>  
 </div>
-    </div>
-  </div>
-</div>
-</section>
-
-
 
 <!-- Google Map Embeded code -->
 <div class="container-fluid mt-2">
@@ -253,7 +218,7 @@ Home</a>
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3 bg-warning">&copy; <?php echo date("m/y"); ?> Copyright:
-    <a class="text-decoration-none hover-overlay shadow-3-strong" href="home.php"> evento.com</a>
+    <a class="text-decoration-none hover-overlay shadow-3-strong" href="https://evento.com/"> evento.com</a>
   </div>
   <!-- Copyright -->
 </footer>
